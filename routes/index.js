@@ -30,6 +30,9 @@ router.get('/members' ,function(req,res){
 router.get('/aim' ,function(req,res){
   res.render('aim');
 })
+router.get('/certificate' ,function(req,res){
+  res.render('certificate');
+})
 router.get('/patient' ,function(req,res){
   res.render('patient');
 })
@@ -69,15 +72,15 @@ router.post('/send' ,function(req,res){
         port: 587,
         secure: false,
         auth: {
-            user: "aditya.s.baghel1@gmail.com",
-            pass: "Aditya@9876"
+            user: "babajifoundationshree@gmail.com",
+            pass: "Aditya@987"
         }
     });
   
     // Message object
     let message = {
-        from: '"Volunteer" <aditya.s.baghel1@gmail.com> ',
-        to: 'aditya <nishantkh786@gmail.com>',
+        from: '"Volunteer" <babajifoundationshree@gmail.com> ',
+        to: 'aditya <Shreemahagurudevbabajifnd@gmail.com>',
         subject: 'Nodemailer is unicode friendly ✔',
         text: 'Hello to myself!',
         html: output
@@ -117,7 +120,7 @@ router.post('/send' ,function(req,res){
           port: 587,
           secure: false,
           auth: {
-              user: "aditya.s.baghel1@gmail.com",
+              user: "babajifoundationshree@gmail.com",
               pass: "Aditya@9876"
           }
       });
@@ -125,7 +128,7 @@ router.post('/send' ,function(req,res){
       // Message object
       let message = {
           from: '"Volunteer" <aditya.s.baghel1@gmail.com> ',
-          to: 'aditya <adityatradershelp@gmail.com>',
+          to: 'aditya <Shreemahagurudevbabajifnd@gmail.com>',
           subject: 'Nodemailer is unicode friendly ✔',
           text: 'Hello to myself!',
           html: output
